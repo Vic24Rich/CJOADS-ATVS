@@ -1,3 +1,9 @@
 # CJOADS-ATVS
-Atividades de Banco de Dados 1 - IFSP Campos do Jordeão
-Atividades de Estatistica Aplicada a Computação - IFSP Campos do Jordeão
+Atividades do Curso de Análise e Desenvolvimento de Sistemas - IFSP Campos do Jordeão
+
+## Atividades:
+
+- Estatistica Aplicada a Computação
+- Bancos de Dados 1
+- Bancos de Dados 2
+- Engenharia da Computação
