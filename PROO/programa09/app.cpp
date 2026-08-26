@@ -1,0 +1,60 @@
+#include <iostream>
+#include <string.h>
+
+using namespace std;
+
+int main(void) {
+	
+	cout << "Array de Ponteiros para Funções\n\n";
+	
+	const char *nomes[] = {
+		"Victor",
+		"Roverto",
+		"Paula",
+		"José",
+		"Antônio",
+		"Gislene",
+		"Laura",
+		"Gorphert",
+		"Rupaul"
+	};
+	
+	size_t total = sizeof(nomes) / sizeof(nomes[0]);
+	
+	int i, j;
+	
+	cout << ">> Total de nomes: " << total << "\n\n";
+	
+	cout << "* Antes da Ordenação: \n\n";
+	
+	for (i = 0; i < total; i++) {
+		
+		cout << i+1 << ". " << nomes[i] << "\n";
+		
+	}
+	
+	for (i = 0; i < total - 1; i++) {
+		
+		for(j = i+1; j < total; j++){
+			
+			if (strcmp(nomes[i], nomes[j]) > 0) {
+				temp = nomes[i];
+				nomes[i] = nomes[j];
+				nomes[j] = temp;
+			}
+			
+		}
+		
+	}
+	
+	cout << "* Após a Ordenação: \n\n";
+	
+	for (i = 0; i < total; i++) {
+		
+		cout << i+1 << ". " << nomes[i] << "\n";
+		
+	}
+	
+	return 0;
+	
+}

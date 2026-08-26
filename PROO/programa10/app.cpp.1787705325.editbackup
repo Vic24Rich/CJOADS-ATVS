@@ -1,0 +1,66 @@
+#include <iostream>
+
+using namespace std;
+
+int main(void) {
+	
+	cout << "\nExemplo de Alocação Dinâmica de memória\n\n";
+	
+	int *numeros = new int[5];
+	
+	for (int i = 0; i < 5; i++) {
+		
+		numeros[i] = i * 2;
+		
+	}
+	
+	cout << "* Numeros: [ ";
+	
+	for (int i  = 0; i < 5; i++) {
+		if (i < 4) {
+
+			cout << numeros[i] << ", ";
+			
+		} else {
+			cout << numeros[i] << " ]";
+		}
+	}
+	
+	delete[] numeros;
+	
+	
+	return 0;
+	
+}: \n\n";
+	
+	for (i = 0; i < total; i++) {
+		
+		cout << i+1 << ". " << nomes[i] << "\n";
+		
+	}
+	
+	for (i = 0; i < total - 1; i++) {
+		
+		for(j = i+1; j < total; j++){
+			
+			if (strcmp(nomes[i], nomes[j]) > 0) {
+				temp = nomes[i];
+				nomes[i] = nomes[j];
+				nomes[j] = temp;
+			}
+			
+		}
+		
+	}
+	
+	cout << "* Após a Ordenação: \n\n";
+	
+	for (i = 0; i < total; i++) {
+		
+		cout << i+1 << ". " << nomes[i] << "\n";
+		
+	}
+	
+	return 0;
+	
+}
