@@ -1,0 +1,19 @@
+#ifndef POKEMON_HPP
+#define POKEMON_HPP
+
+#include <string>
+
+using namespace std;
+
+struct Pokemon  {
+	
+	string nome;
+	string tipo;
+	int nivel;
+	int hp;
+	
+	void aumentarHp(int pontos);
+	
+};
+
+#endif
