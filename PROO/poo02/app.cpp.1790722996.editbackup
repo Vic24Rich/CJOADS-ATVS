@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class GradeBook {
+	
+	public: 
+	
+		void diplayMessage(string myCourse) const {
+			
+			cout << "Welcome to the Grade Book for " << myCourse << "!" << endl;
+			
+		};
+	
+};
+
+int main(void) {
+	
+	cout << "\n>> The Grade Book\n\n";
+	
+	// Criar o objweto do tipo GradeBook, chamado myGradeBook
+	GradeBook myGradeBook;
+	
+	string coursename;
+	
+	cout << "Digite o nome do seu curso: "; cin >> coursename;
+	
+	// Executa o metodo displayMessage()
+	myGradeBook.diplayMessage(coursename);
+	
+	return 0;
+	
+}
