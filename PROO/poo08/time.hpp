@@ -1,0 +1,23 @@
+#ifndef TIME_HPP
+#define TIME_HPP
+
+using namespace std;
+
+class Time {
+		
+	public:
+		
+		Time();
+		void setTime(int h, int m, int s);
+		void printUniversal() const;
+		void printStandard() const;
+		
+	private:
+		
+		unsigned int hour;
+		unsigned int minute;
+		unsigned int second;
+		
+};
+
+#endif
